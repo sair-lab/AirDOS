@@ -26,8 +26,7 @@ jobs:
           git fetch upstream
 
           # Neither forget the -b opt,
-          # the feature/x ref is ambiguous at this stage
-          git checkout -b main origin/main
+          # remember to change branch name such as "master" or "main"
           git merge --no-edit upstream/main
           git push origin main
 
