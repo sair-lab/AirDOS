@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Merge upstream
         run: |
-          git config --global user.name 'SAIR Lab Bot'
+          git config --global user.name 'SAIR Bot'
           git config --global user.email 'admin@sairlab.org'
 
           # "git checkout master" is unnecessary, already here by default
@@ -28,5 +28,3 @@ jobs:
           # remember to change branch name such as "master" or "main"
           git merge --no-edit upstream/main
           git push origin main
-
-          # etc
